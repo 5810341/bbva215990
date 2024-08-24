@@ -1,0 +1,155 @@
+* { margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+.ingresar {
+color: white;
+background-color: #1973b8 ;
+border-color: #1973b8;
+border: none;
+height: 50px;
+width: 300px;
+margin-left: +5px;
+font-size: small;
+cursor: pointer;
+}
+
+.hh {
+
+    color: white;
+background-color: #02a5a5 ;
+border-color: #1973b8;
+border: none;
+height: 50px;
+width: 250px;
+margin-left: +5px;
+font-size: small;
+cursor: pointer;
+margin-top: -100px;
+
+
+}
+
+.ol {
+    width: 300px;
+    user-zoom: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+
+.afiliate {
+    color: white;
+background-color: #1973b8 ;
+border-color: #1973b8;
+border: none;
+height: 35px;
+width: 300px;
+margin-left: +5px;
+font-size: small;
+cursor: pointer;
+
+}
+
+.texto {
+    color: #1973b8;
+    font-size: 13px;
+    text-decoration: none;
+    text-decoration-line: none;
+
+        
+}
+
+.arriba {
+    height: 80px;
+    background-color: #072146;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.solar {
+    width: 105px;
+}
+
+.letra {
+
+    color: #706c6c;
+
+    font-family: "BentonSansBBVA Book";
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.lol {
+
+    padding-left: 30px;
+    display: inline-block;
+    position: relative;
+    line-height: 24px;
+    display: block;
+    display: block !important;
+    margin-bottom: 10px;
+    left: -40px;
+}
+
+.clave{
+    outline-color: #1973b8;
+    
+
+   
+    
+}
+.clave {
+    outline: none;
+    padding: 25px 10px 0 16px;
+    background: #f4f4f4;
+    border-radius: 1px;
+    border: 0;
+    border-bottom: 1px solid #666666;
+    height: 56px;
+    width: 300px
+    
+    
+    
+}
+
+
+.letra3 {
+
+    color: #706c6c;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+

